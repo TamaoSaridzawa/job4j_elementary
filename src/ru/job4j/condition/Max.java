@@ -3,8 +3,7 @@ package ru.job4j.condition;
 public class Max {
 
         public static int maxNumber(int first, int second) {
-            int res = first > second ? first : second;
-            return res;
+            return first > second ? first : second;
         }
 
     public static void main(String[] args) {
