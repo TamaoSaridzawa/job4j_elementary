@@ -20,7 +20,4 @@ public class DivideBySix {
         return rsl;
     }
 
-    public static void main(String[] args) {
-
-    }
 }
