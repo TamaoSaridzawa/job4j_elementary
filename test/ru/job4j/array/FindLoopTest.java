@@ -26,7 +26,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayHas5ThenNo() {
+    public void whenArrayHas9ThenNo() {
         int[] data = {5, 4, 3, 2, 8};
         int el = 9;
         int result = FindLoop.indexOf(data, el);
