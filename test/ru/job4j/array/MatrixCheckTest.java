@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class MatrixCheckTest {
 
     @Test
-    public void momoHorizontal() {
+    public void momoHorizontalTrue() {
         char[][] input = {
                 {' ', ' ', ' '},
                 {'X', 'X', 'X'}
@@ -19,7 +19,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void momoHorizontal2() {
+    public void momoHorizontalTrue2() {
         char[][] input = {
                 {' ', ' ', 'X'},
                 {'X', ' ', 'X', 'X'},
@@ -39,6 +39,32 @@ public class MatrixCheckTest {
         };
         int row = 1;
         boolean res = MatrixCheck.momoHorizontal(input, row);
+        Assert.assertFalse(res);
+    }
+
+    @Test
+    public void monoVerticalTrue() {
+        char[][] input = {
+                {' ', ' ', 'X', 'X'},
+                {'X', ' ', 'X', 'X'},
+                {'X', 'X', ' ', 'X'}
+
+        };
+        int column = 3;
+        boolean res = MatrixCheck.monoVertical(input, column);
+        Assert.assertTrue(res);
+    }
+
+    @Test
+    public void monoVerticalFalse() {
+        char[][] input = {
+                {' ', ' ', 'X', 'X'},
+                {'X', ' ', 'X', 'X'},
+                {'X', 'X', ' ', 'X'}
+
+        };
+        int column = 0;
+        boolean res = MatrixCheck.monoVertical(input, column);
         Assert.assertFalse(res);
     }
 }
