@@ -11,6 +11,7 @@ public class MatrixCheckTest {
     public void momoHorizontalTrue() {
         char[][] input = {
                 {' ', ' ', ' '},
+                {'X', 'X', 'X'},
                 {'X', 'X', 'X'}
         };
         int row = 1;
@@ -22,8 +23,8 @@ public class MatrixCheckTest {
     public void momoHorizontalTrue2() {
         char[][] input = {
                 {' ', ' ', 'X'},
-                {'X', ' ', 'X', 'X'},
-                {'X', 'X'}
+                {'X', ' ', 'X'},
+                {'X', 'X', 'X'}
 
         };
         int row = 2;
@@ -34,7 +35,8 @@ public class MatrixCheckTest {
     @Test
     public void momoHorizontalFalse() {
         char[][] input = {
-                {' ', ' ', 'X'},
+                {' ', 'X', 'X'},
+                {'X', ' ', 'X'},
                 {'X', ' ', 'X'}
         };
         int row = 1;
@@ -47,6 +49,7 @@ public class MatrixCheckTest {
         char[][] input = {
                 {' ', ' ', 'X', 'X'},
                 {'X', ' ', 'X', 'X'},
+                {'X', 'X', ' ', 'X'},
                 {'X', 'X', ' ', 'X'}
 
         };
@@ -60,6 +63,7 @@ public class MatrixCheckTest {
         char[][] input = {
                 {' ', ' ', 'X', 'X'},
                 {'X', ' ', 'X', 'X'},
+                {'X', 'X', ' ', ' '},
                 {'X', 'X', ' ', 'X'}
 
         };
