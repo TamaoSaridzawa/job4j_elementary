@@ -8,6 +8,27 @@ import static org.junit.Assert.*;
 public class MaxTest {
 
     @Test
+    public void whenMaxThen9() {
+        int first = 6;
+        int second = 4;
+        int three = 9;
+        int four = 1;
+        int expected = 9;
+        int out = Max.maxNumberFor(first, second, three, four);
+        Assert.assertEquals(expected, out);
+    }
+
+    @Test
+    public void whenMaxThen10() {
+        int first = 10;
+        int second = 4;
+        int three = 3;
+        int expected = 10;
+        int out = Max.maxNumberThree(first, second, three);
+        Assert.assertEquals(expected, out);
+    }
+
+    @Test
     public void whenMax1To2Then6() {
         int first = 6;
         int second = 4;

@@ -6,7 +6,12 @@ public class Max {
             return first > second ? first : second;
         }
 
-    public static void main(String[] args) {
-        System.out.println(maxNumber(7, 12));
-    }
+        public static int maxNumberThree(int first, int second, int three) {
+            return maxNumber(first, maxNumber(second, three));
+        }
+
+        public static int maxNumberFor(int first, int second, int three, int four) {
+            return maxNumber(maxNumber(first, second), maxNumber(three, four));
+        }
+
 }
