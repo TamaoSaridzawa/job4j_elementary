@@ -1,5 +1,7 @@
 package ru.job4j.condition;
 
+// Правильное название задачи
+
 public class Max {
 
         public static int maxNumber(int first, int second) {
